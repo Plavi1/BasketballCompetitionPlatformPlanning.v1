@@ -1,0 +1,56 @@
+--Version 1.0 features
+1.Authentication and authorization 
+If the login system is designed so that we only register a team, 
+we may have a problem with the same user in two or more teams,
+so each user must be registered and only then be a member of the team. 
+2. Players send a message by phone to a specific number in the form:
+     -> Team name
+     -> A place represented by your team
+     -> Player names (player's year of birth)
+     -> Main contact phone number (if you do not put this we will consider this one 
+        by default)
+3. SuperAdmin menu
+      ->Approves the team
+      ->CRUD operations on Teams, Reports, AllChallenge tables,Events, TeamInEvent, VoteOnWaiting
+      ->Opening new event, SuperAdmin have full control over the event
+4.Event 
+  4.1 The administrator sets the start and end time of the event, 
+      during which time users cannot create new teams.
+  4.2 When the time of the event starts, a new options for event 
+      opens up to the teams:
+                            1> Send a result (all members of a teams sends results 
+                            after match, this message will stand 3 days 
+                            after the end of the match and based on the answers, 
+                            app will assign the winner, and if it is 50-50 the 
+                            referee comes and regulates the match)
+                            2> Challenge other team 
+                            3> Your team is challenged 
+                            4> Statistic 
+                            5> How much time until the end of the event,
+                               and with how many teams you still need to play 
+                               in your location
+  4.3 The team accepts, rejects and sends challenges to other teams
+  4.4 The event will be divided into a few parts if needed, for example:
+      -Teams have a time period for which they should play matches, after that time the 
+       event stops and points are calculated who reached the top 5, IF some teams have 
+       the same score and not all of them are in the top 5, the event will be restarted 
+       but only for those teams that have the same score and they will have a couple of 
+       days to play the match between themselves and whoever wins enters the top 5, this
+       principle will be repeated until all the teams in the top 5 are established 
+5.Reports, each team can submit a report. A team can send a report only 
+  once for the same team.
+6. Voting logic:
+   ->The team cannot send or receive a new challenge if it has not previously registered
+     who won the last game
+
+--Future versions
+
+1. Inivite system, steps on how the user will form a team(due to future versions): 
+   1> In the right corner of the screen, the user will have a message
+      "wait for approval", when the administrator approves, the option 
+      "be part of the team" will pop up for the user, 
+      this option will exist until the event starts
+   2> When the user clicks on that option, a drop-down menu appears where the
+      user has 2 more options, create a team and join the team (where they will 
+      receive a call from a team that has already been created)
+2. User captains

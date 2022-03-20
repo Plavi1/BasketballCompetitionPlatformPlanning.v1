@@ -1,0 +1,4 @@
+This is an application that connects teams from the same place, with the goal that 
+each team plays with everyone and collects points in order to reach the top 5 teams 
+in the place and go to the main tournament where they meet the top 5 teams from each
+place and fight for the best team in the municipality.

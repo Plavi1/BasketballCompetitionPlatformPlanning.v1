@@ -1,0 +1,18 @@
+Questions:
+1.Registration user or team?
+2.How the user forms a team, invite or admin forms a team by the request?They send a 
+message by phone to a specific number and the administrator registers the team and 
+returns their password and username?
+3.Admin approves team/users?
+4.How much reports team/user can send for other team/user?
+5.What challenge creation looks like?
+6.How many challenges a team can have in the same day?
+7.What will happen if some teams have the same score and not all of them are in 
+the top 5?
+
+--Futute version
+1.User can crate or be in a team before approval?(future versions)
+2.Should each member of the team register the winner of the match or only 
+the captains and on the basis of 50% the victory be attributed to one of 
+the two teams, if it is not decided so then the referee comes and regulates 
+the match?

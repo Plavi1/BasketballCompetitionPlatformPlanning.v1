@@ -1,0 +1,95 @@
+--Team
+1. TeamId 
+2. TeamName
+3. PlaceThatTheTeamRepresents (auto input when user creates)
+4. Password
+5. ContactPhone
+6. Player1
+7. Player2
+8. Player3
+9. Player4
+10. AverageAge
+11. DateOfRegistration
+12. Wins
+13. Losts
+14. IsInTop5
+
+--Report
+1. ReportId
+2. ReportedTeamId
+3. SenderTeamId
+4. Message
+
+--TeamInEvent 
+1.EventId
+2.TeamId
+
+--Event
+1. EventId
+2. Place
+3. NumberOfTeamsInEvent 
+4. DateStart
+5. DateEnd
+6. NumberOfMatchesUntilTheEnd
+7. NumberOfMatchesPlayed
+8. IsEventFinished
+
+--TeamInChallenge
+1. ChallangeId (FK)
+2. ChallengerTeamId (FK)
+3. ChallengedTeamId (FK)
+4. EventId (FK)
+
+--Challenge
+1. ChallangeId
+2. Time
+3. Date
+4. LocationOfTheBasketballCourt (Challanger writes)
+5. PlaceOfTeams (automatically)
+6. NumberOfTimeOrDateChanged
+7. IsChallengeComfirmed (Sended or Comfirmed)
+8. IsChallengeFinished
+9. VotesChallanger
+10. VotesChallenged
+
+--VoteOnWaiting
+1. TeamId (FK)
+2. ChallengeId (FK)
+3. ExpiringDateForVotes (after that send win/lose to team)
+
+
+-------Future version tables
+
+--User and Roles
+1. Name 
+2. PhoneNumber
+3. Email
+4. Place of Living (maybe even put the "place you represent") LivingLocation
+5. Date of birth
+6. (FK) TeamId
+7. DateOfRegistraion
+8. Picture
+9. IsApproved
+10. NumberOfReports
+
+--Teams
+1. TeamId
+2. TeamName
+3. PlaceThatTheTeamRepresents (auto input when user creates)
+4. DateOfRegistration
+5. Win
+6. Lost 
+
+--UserInTeam
+1. TeamId
+2. UserId
+3. IsCaptain (bool)
+
+--Invites
+1. TeamId
+2. UserId 
+
+
+
+
+

@@ -1,0 +1,11 @@
+Colors:
+
+1.#0B0A0C (background)
+2.#181818 (nav-bar)
+3.#FF5500 (Main)
+4.#FF7E3D (Hover)
+
+Fonts under consideration:
+
+1. Krona One
+2. Monstserrat

@@ -1,0 +1,5 @@
+1. The team registers
+2. The team is logging in to their profile and waiting for the event to start
+3. The administrator starts the event
+4. Teams compete with each other to enter the top 5 in their place
+5. When the event is over, the teams are informed about the passage to the second phase
