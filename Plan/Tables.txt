@@ -8,7 +8,7 @@
 7. Player2
 8. Player3
 9. Player4
-10. AverageAge
+10. AverageAge (Maybe for all players or dont put)
 11. DateOfRegistration
 12. Wins
 13. Losts
@@ -19,6 +19,7 @@
 2. ReportedTeamId
 3. SenderTeamId
 4. Message
+5. IsChacked
 
 --TeamInEvent 
 1.EventId
