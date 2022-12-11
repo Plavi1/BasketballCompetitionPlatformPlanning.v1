@@ -1,5 +1,6 @@
-1. The team registers
+1. The team registers with sending phone message or phone call
+2. Administrator approves and sends username and password to team captain
 2. The team is logging in to their profile and waiting for the event to start
 3. The administrator starts the event
-4. Teams compete with each other to enter the top 5 in their place
+4. Teams compete with each other to enter the top 10(15,20...)
 5. When the event is over, the teams are informed about the passage to the second phase
