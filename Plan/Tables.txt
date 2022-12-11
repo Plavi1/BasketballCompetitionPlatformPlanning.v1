@@ -1,25 +1,18 @@
 --Team
 1. TeamId 
 2. TeamName
-3. PlaceThatTheTeamRepresents (auto input when user creates)
+3. PlaceThatTheTeamRepresents 
 4. Password
 5. ContactPhone
 6. Player1
 7. Player2
 8. Player3
 9. Player4
-10. AverageAge (Maybe for all players or dont put)
+10. Player5
+10. AverageAge 
 11. DateOfRegistration
-12. Wins
-13. Losts
-14. IsInTop5
-
---Report
-1. ReportId
-2. ReportedTeamId
-3. SenderTeamId
-4. Message
-5. IsChacked
+12. Points (0.25 per game)
+14. IsInTopTeams
 
 --TeamInEvent 
 1.EventId
@@ -35,28 +28,45 @@
 7. NumberOfMatchesPlayed
 8. IsEventFinished
 
---TeamInChallenge
-1. ChallangeId (FK)
-2. ChallengerTeamId (FK)
-3. ChallengedTeamId (FK)
-4. EventId (FK)
+--ChatRoom
+1. RoomId
+2. TeamId1
+3. TeamId2
+4. TeamId3
+8. CreationDateTime
 
---Challenge
-1. ChallangeId
-2. Time
-3. Date
-4. LocationOfTheBasketballCourt (Challanger writes)
-5. PlaceOfTeams (automatically)
+--ChatRoom_ChallengeTimeAgreement
+1. RoomId
+2. TeamId 
+3. Time
+4. Date
+5. LocationOfTheBasketballCourt
 6. NumberOfTimeOrDateChanged
-7. IsChallengeComfirmed (Sended or Comfirmed)
+7. IsChallengeComfirmed 
 8. IsChallengeFinished
-9. VotesChallanger
-10. VotesChallenged
 
---VoteOnWaiting
-1. TeamId (FK)
-2. ChallengeId (FK)
-3. ExpiringDateForVotes (after that send win/lose to team)
+--ChatRoom_TeamLeave
+1. RoomId
+2. TeamId
+3. LeavingDateTime
+
+--TeamInGame (automatically on QR code sacn)
+1. GameId
+2. TeamId
+
+--Game (automatically on QR code sacn)
+1. GameId
+2. Time                          
+3. Date                          
+4. LocationOfTheBasketballCourt                
+8. IsGameFinished (2-3h and Challenge is finished or if they finish the game before then)
+
+--Vote (automatically on QR code sacn, 30min after)
+1.TeamId
+2.GameId
+3.TwoPointTo_TemaId
+4.OnePointTo_TeamId
+5.ZeroPoints_ToTeamId
 
 
 -------Future version tables
@@ -90,7 +100,12 @@
 1. TeamId
 2. UserId 
 
-
+--Report
+1. ReportId
+2. ReportedTeamId
+3. SenderTeamId
+4. Message
+5. IsChacked
 
 
 
