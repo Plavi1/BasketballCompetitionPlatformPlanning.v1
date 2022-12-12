@@ -28,14 +28,14 @@
 7. NumberOfMatchesPlayed
 8. IsEventFinished
 
---ChatRoom
+--AgreementRoom
 1. RoomId
 2. TeamId1
 3. TeamId2
 4. TeamId3
 8. CreationDateTime
 
---ChatRoom_ChallengeTimeAgreement
+--AgreementRoom_GameTimeAgreement
 1. RoomId
 2. TeamId 
 3. Time
@@ -45,7 +45,7 @@
 7. IsChallengeComfirmed 
 8. IsChallengeFinished
 
---ChatRoom_TeamLeave
+--AgreementRoom_TeamLeave
 1. RoomId
 2. TeamId
 3. LeavingDateTime
