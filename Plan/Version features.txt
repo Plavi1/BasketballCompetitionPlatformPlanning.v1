@@ -22,10 +22,10 @@ attend matches and check. Same players must play through all tournament.
       opens up to the teams:
                             !!! Is it legal to display user phone number in the application? !!!
                             
-                            The main feature is the "CHAT ROOM", it's not the usual chat room like in the messaging applications like WhatsApp, Viber...
+                            The main feature is the "AGREEMENT ROOM", it's not the usual chat room like in the messaging applications like WhatsApp, Viber...
                             This chat room serves for teams to communicate with each other and reach an agreement when and where they want to meet and play.
                             A maximum of three teams can be in the chat room (the following document explains why)
-                            "Chat room" will have only 4 functionalities in it:
+                            "agreement room" will have only 4 functionalities in it:
                                  I> A team can send challenge to another team in the form of:
                                       -Place
                                       -Time
