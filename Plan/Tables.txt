@@ -1,5 +1,5 @@
 --Team
-1. TeamId 
+1. Id 
 2. TeamName
 3. PlaceThatTheTeamRepresents 
 4. Password
@@ -14,12 +14,8 @@
 12. Points (0.25 per game)
 14. IsInTopTeams
 
---TeamInEvent 
-1.EventId
-2.TeamId
-
 --Event
-1. EventId
+1. Id
 2. Place
 3. NumberOfTeamsInEvent 
 4. DateStart
@@ -28,44 +24,62 @@
 7. NumberOfMatchesPlayed
 8. IsEventFinished
 
---AgreementRoom
-1. RoomId
-2. TeamId1
-3. TeamId2
-4. TeamId3
-8. CreationDateTime
+--TeamInEvent 
+1.EventId
+2.TeamId
 
---AgreementRoom_GameTimeAgreement
-1. RoomId
-2. TeamId 
+--AgreementRoom
+1. Id
+2. CreationDateTime
 3. Time
 4. Date
 5. LocationOfTheBasketballCourt
-6. NumberOfTimeOrDateChanged
-7. IsChallengeComfirmed 
-8. IsChallengeFinished
+6. NumberOfPlayersInRoom
+7. NumberOfTimeRequestChangedAccepted
+8. IsPublicAgreementRoom
+9. IsGameComfirmed
+10. IsGameFinished
+
+--TeamInAgreementRoom
+1. TeamId
+2. AgreementRoomId
+3. IsCreator
+4. IsHeAcceptsTheAgreed
+
+--AgreementRoom_RequestForChange
+1. TeamId
+2. AgreementRoomId
+3. NewTime 
+4. NewDate
+5. NewLocationOfTheBasketballCourt
+6. IsAccepted (ALLOW NULL SO YOU CAN KNOW WHAT IS CREATOR PICKED)
 
 --AgreementRoom_TeamLeave
 1. RoomId
 2. TeamId
 3. LeavingDateTime
 
---TeamInGame (automatically on QR code sacn)
-1. GameId
-2. TeamId
+--Invite
+1. TeamId
+2. Invites_TeamId
+3. AgreementRoomId
 
 --Game (automatically on QR code sacn)
-1. GameId
+1. Id
 2. Time                          
 3. Date                          
 4. LocationOfTheBasketballCourt                
 8. IsGameFinished (2-3h and Challenge is finished or if they finish the game before then)
 
+--TeamInGame (automatically on QR code sacn)
+1. GameId
+2. TeamId
+
 --Vote (automatically on QR code sacn, 30min after)
-1.TeamId
-2.GivesTo_TeamId
-3.Points
-4.GameId
+1.TeamId (SET NULL)
+2.GivesTo_TeamId (CASCADE)
+3.Points (ALLOW NULL to know if the team votes)
+4.GameId (CASCADE)
 
 
 -------Future version tables
