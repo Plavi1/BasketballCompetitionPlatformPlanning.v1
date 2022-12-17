@@ -63,10 +63,9 @@
 
 --Vote (automatically on QR code sacn, 30min after)
 1.TeamId
-2.GameId
-3.TwoPointTo_TemaId
-4.OnePointTo_TeamId
-5.ZeroPoints_ToTeamId
+2.GivesTo_TeamId
+3.Points
+4.GameId
 
 
 -------Future version tables
