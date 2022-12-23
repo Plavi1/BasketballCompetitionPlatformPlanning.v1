@@ -49,7 +49,7 @@
 1. TeamId
 2. AgreementRoomId
 3. IsCreator
-4. IsHeAcceptsTheAgreed
+4. IsTeamAcceptedTheAgreement
 
 --AgreementRoom_RequestForChange
 1. TeamId
